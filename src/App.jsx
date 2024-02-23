@@ -1,26 +1,22 @@
-
-import { About } from './components/About'
-import { Quote } from './components/Quote'
-import { Services } from './components/Services'
-import { SectionImage } from './components/SectionImage'
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
-
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import NotFound from './NotFound';
+import Gallery from './Gallery';
+import Proyecto from './Proyecto';
 
 function App() {
-
-
-
   return (
-    <>
-      <Header />
-      <About />
-      <Quote />
-      <Services />
-      <SectionImage />
-      <Footer />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/galeria" element={<Gallery />} />
+        <Route path="/proyecto" element={<Proyecto />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} /> Manejar rutas no coincidentes
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

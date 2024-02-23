@@ -4,9 +4,9 @@ import service6 from "../../assets/service6.jpg"
 
 export function Services(){
     return (
-        <div className='services'>
-        <p className='subtitle'>sobre nosotros</p>
-        <p className='subtitle2'>ERES BIENVENIDO A CADA UNO DE NUEFSTROS SERVICIOS</p>
+        <div id="services" className='services'>
+        <p className='subtitle'>¿Que actividades tenemos?</p>
+        <p className='subtitle2'>ERES BIENVENIDO A CADA UNO DE NUESTROS SERVICIOS</p>
         <div className='informationCards'>
           <div className='informations'>
             <div>

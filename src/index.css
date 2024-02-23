@@ -8,6 +8,7 @@
   color: white;
 }
 
+
 body {
   margin: 0px;
 }
@@ -17,15 +18,58 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
-  width: 100%;
-  height: 100vh;
   background-image: url('../src/assets/2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #333;
   background-attachment: fixed;
+  position: relative;
+  /* Agrega esta línea para que el contenido sea relativo al contenedor */
 }
+
+.overlayHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 19 28 / 69%);
+  /* Ajusta el valor alpha según tu preferencia */
+  background-color: rgba(200, 200, 200, 0.5);
+  /* Gris claro con 50% de opacidad */
+  background-color: rgba(50, 50, 50, 0.5);
+  /* Gris oscuro con 50% de opacidad */
+
+
+  /* rgb(0 19 28 / 69%) */
+}
+
+/* background-color: rgb(0 19 28 / 69%); // Ajusta el valor alpha según tu preferencia
+background-color: rgba(200, 200, 200, 0.5); // Gris claro con 50% de opacidad 
+background-color: rgba(50, 50, 50, 0.5); // Gris oscuro con 50% de opacidad  */
+
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  z-index: 1;
+  /* Agrega esta línea para que el contenido esté por encima del fondo */
+}
+
+.contentHeader h1,
+.contentHeader p {
+  opacity: 0;
+  animation: fade-in 0.75s 0.25s ease-in forwards;
+  color: white;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
 
 /* NavBAR */
 
@@ -39,7 +83,10 @@ body {
   padding: 20px;
   background-color: transparent;
   color: white;
+  position: relative;
 }
+
+
 
 .logo {
   width: 100px;
@@ -54,7 +101,13 @@ body {
   text-decoration: none;
   color: white;
   margin: 0 15px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+
 }
+
 
 .hamburger-menu {
   display: none;
@@ -144,6 +197,8 @@ body {
 
   &:hover {
     background-color: #2980b9;
+    transform: scale(1.1);
+
   }
 }
 
@@ -223,6 +278,11 @@ body {
   background-color: #f8f8f8;
   padding: 40px 20px;
   text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .quienes-somos-content,
@@ -376,6 +436,7 @@ button:hover {
   background-color: #f8f8f8;
   color: #333;
   padding: 20px;
+  /* height: 600px; */
 }
 
 
@@ -455,7 +516,7 @@ button:hover {
 .footer {
   background-color: #071f29;
   color: #fff;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .footer-content {
@@ -502,14 +563,13 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../src/assets/service4.jpg');
+  background-image: url('../src/assets/portada.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
-  /* Añade un fondo oscuro transparente */
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -520,4 +580,263 @@ button:hover {
 .overlay h1 {
   margin: 0;
   font-size: 2em;
+}
+
+/* redes sociales */
+
+.redes-sociales-section {
+  text-align: center;
+  padding: 20px;
+  min-height: 200px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales-section h2 {
+  margin-bottom: 10px;
+}
+
+.redes-iconos a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.redes-iconos img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.redes-iconos img:hover {
+  transform: scale(1.2);
+}
+
+
+/* whatsapp */
+
+.whatsapp {
+  background-color: transparent;
+  position: fixed;
+  float: right;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* carrusel */
+
+.carrusel-container {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* NotFound.css */
+.not-found-container {
+  text-align: center;
+  /* padding: 20px; */
+  background-color: #001c28fb;
+  /* Color de fondo rojo claro (puedes cambiarlo) */
+  color: white;
+  /* Texto color rojo oscuro (puedes cambiarlo) */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-container h2 {
+  color: white;
+}
+
+/* galeria pagina */
+
+.galleryPage {
+  /* background-color: #001c28; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerGallery {
+  width: 100%;
+  height: 45vh;
+  background-image: url('../src/assets/audiovisual1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+}
+
+.galleryPage h2{
+  font-size: 50px;
+}
+
+
+/* galeria componente */
+.contentGallerySwipper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.galle {
+  width: 100%;
+  height: 60px;
+}
+
+
+
+
+
+/* GalleryItem.css */
+/* Gallery.css */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  height: -webkit-fill-available;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* proyecto */
+
+.headerProyecto {
+  width: 100%;
+  height: 45vh;
+  background-image: url('../src/assets/proyecto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+}
+
+
+.proyectoDetails {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 100px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Estilo de la sección con iconos */ 
+.project-section {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto;
+}
+
+/* Estilo de cada categoría */
+.category {
+  text-align: center;
+}
+
+/* Estilo de los iconos */
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Estilo de la sección de blogs */
+.blogs-section {
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+/* Estilo de los blogs individuales */
+.blog-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blog {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
