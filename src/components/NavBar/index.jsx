@@ -18,7 +18,7 @@ export function NavBar() {
                 <a href="#about">Nosotros</a>
                 <a href="#services">Servicio</a>
                 <a href="/galeria">Galeria</a>
-                <a href="/Proyecto">Proyecto</a>
+                <a href="/proyecto">Proyecto</a>
                 <a href="#footer">Contacto</a>
             </div>
             <div className="hamburger-menu" onClick={toggleMenu}>

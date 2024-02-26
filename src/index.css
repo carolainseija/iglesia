@@ -817,6 +817,9 @@ button:hover {
 
 
 @media (max-width: 768px) {
+  .contentHeader {
+    position: relative;
+  }
   .logo {
     width: 50px;
   }
@@ -832,6 +835,7 @@ button:hover {
     min-height: 150px;
     margin: 0px auto;
     justify-content: center;
+    z-index: 1000;
   }
 
   .menu.show {
