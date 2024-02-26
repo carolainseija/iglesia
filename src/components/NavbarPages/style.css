@@ -1,88 +1,61 @@
-/* NavBAR */
-
-
+/* NavBAR black sm */
 .navbarPages {
-    width: 80%;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: transparent;
-    color: black;
-    position: relative;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  color: black;
+  position: relative;
+}
+
+.menu-sm {
+  display: flex;
+}
+
+.menu-sm a {
+  text-decoration: none;
+  color: #001c28;
+  margin: 0 15px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
   }
-  
-  
-  
-  .logo {
-    width: 100px;
-    height: auto;
-  }
-  
-  .menu {
-    display: flex;
-  }
-  
-  .navbarPages .menu a {
-    text-decoration: none;
-    color: black;
-    margin: 0 15px;
-    cursor: pointer;
-  }
-  
-  
-  .navbarPages .hamburger-menu {
+}
+
+.hamburger-menu-sm {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar-sm {
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #001c28;
+}
+
+@media (max-width: 768px) {
+  .menu-sm {
     display: none;
     flex-direction: column;
-    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    min-height: 150px;
+    margin: 0px auto;
+    justify-content: center;
+    z-index: 1000;
   }
-  
- .navbarPages  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
+  .menu-sm.show-sm {
+    display: flex;
   }
-  
-  @media (max-width: 768px) {
-    .logo {
-      width: 50px;
-    }
-  
-   .navbarPages .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100px;
-      background-color: #001c28;
-      width: 80%;
-      height: auto;
-      min-height: 150px;
-      margin: 0px auto;
-      justify-content: center;
-    }
-  
-    .menu.show {
-      display: flex;
-    }
-  
-    .hamburger-menu {
-      display: flex;
-    }
-  
-    .subtitle2 {
-      text-align: center;
-    }
+  .hamburger-menu-sm {
+    display: flex;
   }
-  
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
+}
