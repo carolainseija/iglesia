@@ -23,14 +23,10 @@ const Carrusel = () => {
   const [banners, setBanners] = useState([])
 
   const getBanners = async () => {
-    const docRef = doc(db, "images", "banners")
-    const docSnap = await getDoc(docRef)
-    // Convertir el objeto a un array de valores
-    const bannersArray = Object.values(docSnap.data());
-    // Establecer el nuevo estado de banners
-    setBanners(bannersArray);
+    getDocs(query(collection(db, "banners")))
+      .then((doc) =>
+        setBanners(doc.docs.map((d) => d.data())))
   }
-
 
   useEffect(() => {
     getBanners()
@@ -41,7 +37,7 @@ const Carrusel = () => {
       <Slider {...settings}>
         {banners.map((banner, index) => (
           <div key={index}>
-            <img src={banner} alt={`Banner ${index + 1}`} />
+            <img src={banner.href} alt={`Banner ${index + 1}`} />
           </div>
         ))}
       </Slider>
