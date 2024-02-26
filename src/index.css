@@ -122,36 +122,6 @@ background-color: rgba(50, 50, 50, 0.5); // Gris oscuro con 50% de opacidad  */
   margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-  .logo {
-    width: 50px;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    background-color: #001c28;
-    width: 80%;
-    height: auto;
-    min-height: 150px;
-    margin: 0px auto;
-    justify-content: center;
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
-  .hamburger-menu {
-    display: flex;
-  }
-
-  .subtitle2 {
-    text-align: center;
-  }
-}
 
 
 @keyframes fade-in {
@@ -689,7 +659,7 @@ button:hover {
 
 }
 
-.galleryPage h2{
+.galleryPage h2 {
   font-size: 50px;
 }
 
@@ -794,7 +764,7 @@ button:hover {
   align-items: center;
 }
 
-/*  Estilo de la sección con iconos */ 
+/*  Estilo de la sección con iconos */
 .project-section {
   width: 60%;
   height: auto;
@@ -840,4 +810,102 @@ button:hover {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .logo {
+    width: 50px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    background-color: #001c28;
+    width: 80%;
+    height: auto;
+    min-height: 150px;
+    margin: 0px auto;
+    justify-content: center;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .subtitle2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0px 20px;
+  }
+
+  .contentHeader h1, p {
+    text-align: center;
+  }
+
+  .mision-vision-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  .mision-vision-content div {
+    width: 80%;
+    margin: 20px auto;
+
+  }
+.services{
+  height: auto;
+}
+  .fondo-frase {
+    height: auto;
+  }
+
+  .informations {
+    flex-direction: column;
+  }
+  .informations div {
+    width: auto;
+    margin: 10px 0px;
+  }
+  .informations div h2 {
+    text-align: center;
+  }
+  .overlay {
+    margin: 15px;
+  }
+  .quienes-somos-container {
+    height: auto;
+  }
+  .informationCards {
+    padding: 0px;
+  }
+  .galleryPage {
+    height: auto;
+  }
+  .galleryPage h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.headerProyecto {
+  background-position-x: center;
+}
+.project-section  {
+  width: 90%;
+  margin: 10px auto;
+}
+.proyectoDetails h2 {
+  text-align: center;
+}
 }
