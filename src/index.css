@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../src/assets/2.jpg');
+  background-image: url('https://igle.tech/wp-content/uploads/2021/09/Captura-de-pantalla-2021-09-25-a-las-20.47.54.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -674,7 +674,7 @@ button:hover {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  padding-bottom: 100px;
+  padding: 100px 0px;
   justify-content: center;
   align-items: center;
 }
@@ -745,6 +745,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 100px;
 }
 
 .gallery-item {
