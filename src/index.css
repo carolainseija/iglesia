@@ -18,9 +18,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://igle.tech/wp-content/uploads/2021/09/Captura-de-pantalla-2021-09-25-a-las-20.47.54.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url('https://igle.tech/wp-content/uploads/2021/09/Captura-de-pantalla-2021-09-25-a-las-20.47.54.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   background-attachment: fixed;
   position: relative;
   /* Agrega esta línea para que el contenido sea relativo al contenedor */
@@ -32,15 +32,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 19 28 / 69%);
-  /* Ajusta el valor alpha según tu preferencia */
-  background-color: rgba(200, 200, 200, 0.5);
-  /* Gris claro con 50% de opacidad */
-  background-color: rgba(50, 50, 50, 0.5);
-  /* Gris oscuro con 50% de opacidad */
 
-
-  /* rgb(0 19 28 / 69%) */
 }
 
 /* background-color: rgb(0 19 28 / 69%); // Ajusta el valor alpha según tu preferencia
@@ -549,13 +541,12 @@ button:hover {
   transform: scale(1.1);
 }
 
-/* carrusel */
+/* carrusel home */
 
-.carrusel-container {
+.carrusel-containerHome {
   max-width: 100%;
   overflow: hidden;
-  margin: 0 auto;
-  padding: 100px 0px;
+
 }
 
 .slick-slide img {

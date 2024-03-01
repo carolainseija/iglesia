@@ -1,0 +1,11 @@
+.carrusel-container {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}

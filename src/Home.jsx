@@ -21,13 +21,11 @@ function Home() {
       <About />
        <Quote />
       <Services />
-      <Carrusel />
       <Childrens />
       <div className='contentGallerySwipper'>
       <h2>Nuestras Fotos</h2>
       <GallerySwiper />
       </div>
-
       <SectionImage /> 
       <div className="redes-sociales-section">
         <h2>Síguenos en Redes Sociales</h2>
