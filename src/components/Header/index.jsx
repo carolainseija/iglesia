@@ -1,10 +1,9 @@
-import { NavBar } from "../NavBar";
-
 import { db } from "../../firebase"; import { useEffect, useState } from "react";
-import {  collection, doc, getDoc, getDocs, query, where  } from "firebase/firestore";
+import { collection, getDocs, query } from "firebase/firestore";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { NavBarPages } from "../NavbarPages";
 
 export function Header() {
   const [texts, setTexts] = useState([])
@@ -47,18 +46,17 @@ export function Header() {
 
   return (
     <div>
-              <NavBar classColor='navbar' />
-
+      <NavBarPages />
       <div className="carrusel-containerHome">
-      <Slider {...settings}>
-        {banners.map((banner, index) => (
-          <div key={index}>
-            <img src={banner.href} alt={`Banner ${index + 1}`} />
-          </div>
-        ))}
-      </Slider>
-    </div>
-    
+        <Slider {...settings}>
+          {banners.map((banner, index) => (
+            <div key={index}>
+              <img src={banner.href} alt={`Banner ${index + 1}`} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+
     </div>
 
   )
