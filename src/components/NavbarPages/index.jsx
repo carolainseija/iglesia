@@ -6,10 +6,14 @@ export function NavBarPages() {
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     };
-    
+
     return (
         <div className="navbarPages">
-            <div> <img className="logo" src="https://idpmisi.com/wp-content/uploads/2021/08/favicon.ico.png" alt="logo de la iglesia" /></div>
+            <div>
+                <a href="/">
+                    <img className="logo" src="https://idpmisi.com/wp-content/uploads/2021/08/favicon.ico.png" alt="logo de la iglesia" />
+                </a>
+            </div>
             <div className={`menu-sm ${showMenu ? 'show-sm' : ''}`}>
                 <a href="/">Inicio</a>
                 <a href="/#about">Nosotros</a>

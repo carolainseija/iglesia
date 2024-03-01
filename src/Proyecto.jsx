@@ -102,7 +102,6 @@ export default function Proyecto() {
         <section className="blogs-section">
           <h2>Reuniones Recientes</h2>
           <p>Que hemos hecho en nuestras ultimas reuniones con ellos</p>
-          
           <div className="blog-container">
             {blogs.map((blog, index) => (
               <div className="blog" key={index}>

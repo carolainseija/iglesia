@@ -5,7 +5,7 @@ import './style.css'
 export function NavBar() {
 
 
-    
+
     const [showMenu, setShowMenu] = useState(false);
     const toggleMenu = () => {
         setShowMenu(!showMenu);
@@ -14,7 +14,11 @@ export function NavBar() {
     )
     return (
         <div className="navbar">
-            <div> <img className="logo" src="https://idpmisi.com/wp-content/uploads/2021/08/favicon.ico.png" alt="logo de la iglesia" /></div>
+            <div>
+                <a href="/">
+                    <img className="logo" src="https://idpmisi.com/wp-content/uploads/2021/08/favicon.ico.png" alt="logo de la iglesia" />
+                </a>
+            </div>
             <div className={`menu ${showMenu ? 'show' : ''}`}>
                 <a href="/">Inicio</a>
                 <a href="#about">Nosotros</a>

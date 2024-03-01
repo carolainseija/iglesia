@@ -677,6 +677,7 @@ button:hover {
 .gallery-item img {
   height: -webkit-fill-available;
   cursor: pointer;
+
   &:hover {
     transform: scale(1.05);
   }
@@ -692,11 +693,14 @@ button:hover {
 
 .headerProyecto {
   width: 100%;
-  height: 45vh;
+  height: 55vh;
   background-image: url('../src/assets/proyecto.png');
+  /* background-image: url('../src/assets/alcanzate.jpg'); */
+
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: center;
+  background-position-y: 40%;
+  background-position-x: center;
 
 }
 
@@ -795,9 +799,11 @@ button:hover {
     margin: 20px auto;
 
   }
-.services{
+
+  .services {
     height: auto;
   }
+
   .fondo-frase {
     height: auto;
   }
@@ -805,36 +811,46 @@ button:hover {
   .informations {
     flex-direction: column;
   }
+
   .informations div {
     width: auto;
     margin: 10px 0px;
   }
+
   .informations div h2 {
     text-align: center;
   }
+
   .overlay {
     margin: 15px;
   }
+
   .quienes-somos-container {
     height: auto;
   }
+
   .informationCards {
     padding: 0px;
   }
+
   .galleryPage {
     height: auto;
   }
+
   .galleryPage h2 {
     font-size: 35px;
     text-align: center;
   }
+
   .headerProyecto {
     background-position-x: center;
   }
-.project-section  {
+
+  .project-section {
     width: 90%;
     margin: 10px auto;
   }
+
   .proyectoDetails h2 {
     text-align: center;
   }
