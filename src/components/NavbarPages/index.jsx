@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './style.css'
+import logo from "../../assets/logo-white.png"
+
 export function NavBarPages() {
 
     const [showMenu, setShowMenu] = useState(false);
@@ -7,11 +9,13 @@ export function NavBarPages() {
         setShowMenu(!showMenu);
     };
 
+
+
     return (
         <div className="navbarPages">
             <div>
                 <a href="/">
-                    <img className="logo" src="https://idpmisi.com/wp-content/uploads/2021/08/favicon.ico.png" alt="logo de la iglesia" />
+                    <img className="logo" src={logo} alt="logo de la iglesia" />
                 </a>
             </div>
             <div className={`menu-sm ${showMenu ? 'show-sm' : ''}`}>

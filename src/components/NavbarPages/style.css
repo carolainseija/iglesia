@@ -17,7 +17,7 @@
 
 .menu-sm a {
   text-decoration: none;
-  color: #001c28;
+  color: white;
   margin: 0 15px;
   cursor: pointer;
   &:hover {
