@@ -2,6 +2,8 @@ import { NavBar } from "../NavBar";
 
 import { db } from "../../firebase"; import { useEffect, useState } from "react";
 import { collection, getDocs, query } from "firebase/firestore";
+import vd from "../../assets/video.mp4"
+
 
 
 export function Header() {
@@ -19,17 +21,14 @@ export function Header() {
 
 
   return (
-    <div className="frontHeader">
-      <div className="overlayHeader"></div>
-      <NavBar classColor='navbar' />
-      {texts.map((text) => (
-        <div className="contentHeader">
-          <h1>{text.titleHeader}</h1>
-          <p>{text.subtitleHeader}</p>
-          <button className="btnConect">Charlemos</button>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="headerVideo">
+         <video className="header-video" autoPlay loop muted>
+        <source src={vd} type="video/mp4" />
+        </video>
+         <NavBar />
+      </div>
+    </>
 
   )
 }

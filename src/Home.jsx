@@ -17,12 +17,12 @@ function Home() {
 
   return (
     <>
-      <Header />
+       <Header />
       <About />
        <Quote />
       <Services />
       <Carrusel />
-      <Childrens />
+       <Childrens />
       <div className='contentGallerySwipper'>
       <h2>Nuestras Fotos</h2>
       <GallerySwiper />

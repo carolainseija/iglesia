@@ -21,7 +21,7 @@ export function Services() {
       <p className='subtitle'>¿Que actividades tenemos?</p>
       <p className='subtitle2'>ERES BIENVENIDO A CADA UNO DE NUESTROS SERVICIOS</p>
       <div className='informationCards'>
-          {services.length > 0 && (
+           {services.length > 0 && (
             <div className='informations'>
               {services.map((service) => (
                 <div>
