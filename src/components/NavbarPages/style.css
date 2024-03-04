@@ -1,21 +1,26 @@
 /* NavBAR black sm */
 .navbarPages {
-  width: 80%;
-  margin: 0px auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  background-color: transparent;
-  color: black;
+  padding: 20px 0px;
+  background-color: #282c34;
+  color: white;
   position: relative;
+  margin: 0px;
 }
 
 .menu-sm {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-sm a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: white;
   margin: 0 15px;
@@ -58,4 +63,8 @@
   .hamburger-menu-sm {
     display: flex;
   }
+}
+
+.iconoNav {
+  margin-right: 7px;
 }
