@@ -9,6 +9,7 @@ import Questions from './components/Questions';
 import Benefit from './components/Benefits';
 import Contact from './components/Contact';
 import FixImage from './components/FixImage';
+import WebSection from './components/WebSection';
 
 
 // import { Controller, Scene } from 'react-scrollmagic';
@@ -45,6 +46,7 @@ function Home() {
       </header>
       <Benefit />
       <FixImage />
+      <WebSection />
       <Questions />
       <Contact />
     </div>

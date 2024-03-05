@@ -1,0 +1,49 @@
+
+  
+  .web-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .website-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .website-card:hover {
+    transform: translateY(-5px);
+    background-color: #eec0684d;
+  }
+  
+  .website-card h2 {
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .website-card a {
+    display: block;
+    background-color: #eec068;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .website-card a:hover {
+    background-color: #eec068;
+  }
+  

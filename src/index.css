@@ -50,7 +50,8 @@ section {
 
 
 h2 {
-  color: #333; /* Color del texto más oscuro */
+  color: #333;
+  /* Color del texto más oscuro */
 }
 
 ul {
@@ -78,23 +79,28 @@ button:hover {
 
 
 @media (max-width: 768px) {
- 
+
   .church-section {
     flex-direction: column;
   }
+
   .fixImage {
     height: 40vh;
     background-position-x: center;
     background-position-y: center;
   }
+
   section {
     margin: 0px auto;
+    height: auto;
   }
-
+.benefits {
+  height: auto;
+}
   .benefit0 {
     margin-top: 50px;
   }
-  
+
   .benefit1 {
     margin-top: 50px;
   }
@@ -119,15 +125,67 @@ button:hover {
   .contact-indo {
     padding: 30px;
   }
+
   .info-text {
     text-align: center;
   }
-  .detail{
+
+  .detail {
     justify-content: center;
   }
 
   .footer-bottom {
     flex-direction: column;
   }
+
+
+  .web-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .section-header {
+    padding: 30px;
+  }
+  
+  .websites-container {
+    width: 100%;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .website-card {
+    width: 85%;
+    margin: 10px auto;
+  }
+
+  .website-card h2, a {
+    font-size: 17px;
+  }
+}
+
+
+@media (max-width: 300px) {
+
+
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  
 
 }
