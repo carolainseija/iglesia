@@ -1,49 +1,54 @@
-<div>
-        
-      <header>
-        <h1>Páginas Web para Iglesias</h1>
-        <p>Transforma la presencia online de tu iglesia con nuestro servicio de diseño de páginas web.</p>
+// src/App.js
+import React, { useEffect, useRef, useState } from 'react';
+import Pricing from './components/Pricing';
+import { NavBarPages } from './components/NavbarPages';
+
+
+
+import Questions from './components/Questions';
+import Benefit from './components/Benefits';
+import Contact from './components/Contact';
+import FixImage from './components/FixImage';
+
+
+// import { Controller, Scene } from 'react-scrollmagic';
+// import { Tween } from 'react-gsap';
+
+function Home() {
+
+  const [contactFormData, setContactFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  // Función para manejar cambios en el formulario
+  const handleFormChange = (e) => {
+    setContactFormData({
+      ...contactFormData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Función para manejar el envío del formulario
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+    // Aquí puedes realizar acciones como enviar los datos a un servidor
+    // y mostrar un mensaje de éxito o error.
+    console.log('Formulario enviado:', contactFormData);
+  };
+
+  return (
+    <div className="App">
+      <NavBarPages />
+      <header className="App-header">
       </header>
-
-      <section>
-        <h2>¿Por qué es necesario tener una página web para tu iglesia?</h2>
-        <p>
-          Tener una presencia online es esencial en la era digital actual. Aquí te mostramos algunos beneficios:
-        </p>
-        <ul>
-          <li>Alcance más amplio de la comunidad.</li>
-          <li>Comunicación efectiva de eventos y actividades.</li>
-          <li>Recopilación de donaciones de manera segura.</li>
-          <li>Creación de una comunidad en línea.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Opciones de Estilos</h2>
-        <div className="style-options">
-          <div className="style-option">
-            <h3>Estilo Clásico</h3>
-            <p>Un diseño elegante y tradicional para iglesias con una estética más clásica.</p>
-            <button>Seleccionar</button>
-          </div>
-
-          <div className="style-option">
-            <h3>Estilo Moderno</h3>
-            <p>Un diseño fresco y contemporáneo para iglesias que desean destacar en la era digital.</p>
-            <button>Seleccionar</button>
-          </div>
-
-          <div className="style-option">
-            <h3>Estilo Minimalista</h3>
-            <p>Un diseño simple y limpio para iglesias que prefieren la simplicidad visual.</p>
-            <button>Seleccionar</button>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>¡Contáctanos!</h2>
-        <p>Comunícate con nosotros para discutir cómo podemos ayudarte a crear la página web perfecta para tu iglesia.</p>
-        <button>Contactar</button>
-      </section>
+      <Benefit />
+      <FixImage />
+      <Questions />
+      <Contact />
     </div>
+  );
+}
+
+export default Home;

@@ -1,13 +1,12 @@
-/* src/App.css */
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1c2a45;
   padding: 20px;
   color: white;
-  background-image: url("./assets/banner-landing.png");
+  background-image: url("./assets/banner.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 70vh;
@@ -30,12 +29,9 @@ header {
 
 section {
   max-width: 80%;
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #fff; /* Fondo blanco para las secciones */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .style-options {
@@ -73,212 +69,10 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Transición suave en el cambio de color de fondo */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #555;
 }
-
-/* src/components/OptionCard.css */
-.option-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  background-color: #fff; /* Fondo blanco */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición en la transformación y sombra */
-}
-
-.option-card:hover {
-  transform: scale(1.05); /* Efecto de escala en el hover */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en el hover */
-}
-
-.price {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.features {
-  list-style: none;
-  padding: 0;
-}
-
-.features li {
-  margin: 8px 0;
-}
-
-.order-button {
-  background-color: #61dafb;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease; /* Transición suave en el cambio de color de fondo */
-}
-
-.order-button:hover {
-  background-color: #4fa3d1;
-}
-/* src/components/Pricing.css */
-.pricing-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.pricing-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.option-card {
-  flex: 1;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 0 10px;
-}
-
-.option-card button {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.option-card button:hover {
-  background-color: #555;
-}
-
-
-
-.logo {
-  width: 200px;
-  height: auto;
-}
-
-.navbarPages a {
- color: white;
-}
-
-.menu a {
-  color: white;
-}
-
-.contact {
-  background-color: #EEC068;
-  padding: 10px 20px;
-  border-radius: 30px;
-}
-
-/* #EEC068 amarillo */
-
-/* beneficios de tener sitio web */
-
-.church-section {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-}
-
-.benefit {
-  text-align: center;
-  max-width: 300px;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 8px;
-  background-color: #f0f0f0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.iconBenefit {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 500ms;
-}
-
-
-/* pregunntas y resp */
-
-.faq-container {
-  width: 70%;
-  margin: auto;
-}
-
-.faq-item {
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.faq-item:hover {
-  background-color: #f5f5f5;
-}
-
-.answer {
-  display: none;
-}
-
-.faq-item.expanded .answer {
-  display: block;
-}
-
-
-
-
-/* section imagen superpuesta */
-.contenedorPrincipal {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px; /* Ajusta según tus necesidades */
-  margin: 0 auto;  /* Centra el contenedor principal */
-  height: 100vh;   /* Ajusta según tus necesidades, asegura que tenga altura */
-  overflow: hidden; /* Evita que la imagen se salga del contenedor */
-  background-color: red;
-}
-
-.contenedorSuperior,
-.contenedorInferior {
-  width: 100%;  /* O ajusta según tus necesidades */
-  border: 1px solid #ccc;  /* Puedes personalizar el borde */
-  padding: 20px;  /* Puedes ajustar el espacio interno */
-  margin-bottom: 10px;  /* Agrega espacio entre los contenedores */
-  height: 50vh;
-  background-color: #EEC068;
-}
-
-.imagenSuperpuesta {
-  position: relative;
-}
-
-.imagenSuperpuesta img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;  /* Ajusta según tus necesidades */
-}
-
 

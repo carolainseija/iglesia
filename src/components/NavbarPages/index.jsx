@@ -16,7 +16,6 @@ export function NavBarPages() {
     };
 
 
-
     return (
         <div className="navbarPages">
             <div>
@@ -26,7 +25,7 @@ export function NavBarPages() {
             </div>
             <div className={`menu-sm ${showMenu ? 'show-sm' : ''}`}>
                 <a href="/">
-                <img src={about} className='iconoNav' alt='icono' />
+                <img src={inicio} className='iconoNav' alt='icono' />
                     Inicio</a>
                 <a href="/#about">
                 <img src={about} className='iconoNav' alt='icono' />
@@ -34,7 +33,7 @@ export function NavBarPages() {
                 <a href="/#services">
                     <img src={web} className='iconoNav' alt='icono' />
                     Servicio</a>
-                <a href="/galeria">
+                <a href="#">
                     <img src={gallery} className='iconoNav' alt='icono' />
                     Galeria</a>
                 <a href="/proyecto">Proyecto</a>

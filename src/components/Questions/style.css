@@ -1,0 +1,36 @@
+/* src/components/Questions.css */
+.faq-container {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item:hover {
+    /* background-color: #f5f5f5; */
+    background-color: #e1a53359;
+
+  }
+  
+  .answer {
+    display: none;
+    margin-top: 15px;
+  }
+  
+  .faq-item.expanded .answer {
+    display: block;
+  }
+  
+
+  .faq {
+    margin-bottom: 100px;
+  }

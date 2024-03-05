@@ -1,0 +1,8 @@
+.fixImage {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../../assets/versiculo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}

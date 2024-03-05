@@ -23,7 +23,7 @@ export function NavBar() {
                 <a href="/">Inicio</a>
                 <a href="#about">Nosotros</a>
                 <a href="#services">Servicio</a>
-                <a href="/galeria">Galeria</a>
+                <a href="#">Galeria</a>
                 <a href="/proyecto">Proyecto</a>
                 <a href="#footer">Contacto</a>
             </div>

@@ -1,0 +1,124 @@
+/* Contact.css */
+.contact-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    height: auto;
+
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .info-text {
+    text-align: left;
+  }
+  
+  .info-text h2 {
+    color: #eec068;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .detail i {
+    margin-right: 10px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #eec068;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #eec068;
+  }
+  
+
+  label {
+    color: #eec068;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 200px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: white;
+  }
+
+
+  
+  .footer-bottoml ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-bottom li {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+  }
