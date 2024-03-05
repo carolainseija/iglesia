@@ -76,3 +76,58 @@ button:hover {
   background-color: #555;
 }
 
+
+@media (max-width: 768px) {
+ 
+  .church-section {
+    flex-direction: column;
+  }
+  .fixImage {
+    height: 40vh;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  section {
+    margin: 0px auto;
+  }
+
+  .benefit0 {
+    margin-top: 50px;
+  }
+  
+  .benefit1 {
+    margin-top: 50px;
+  }
+
+  .benefit2 {
+    margin-top: 50px;
+  }
+
+  .benefit3 {
+    margin-top: 50px;
+  }
+
+
+  .App-header {
+    height: 15vh;
+  }
+
+  .contact-container {
+    flex-direction: column-reverse;
+  }
+
+  .contact-indo {
+    padding: 30px;
+  }
+  .info-text {
+    text-align: center;
+  }
+  .detail{
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+}

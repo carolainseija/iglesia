@@ -28,7 +28,7 @@ export default function Benefit() {
                 <div className="church-section">
                     {benefits.map((benefit, index) => (
                         <>
-                            <div className={`benefit${index}`}>
+                            <div className={`benefits benefit${index}`}>
                                 <img className='iconBenefit' src={benefit.icon} />
                                 <h3>{benefit.title}</h3>
                                 <p>{benefit.content}</p>
