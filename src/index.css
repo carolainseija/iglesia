@@ -13,6 +13,11 @@ body {
   margin: 0px;
 }
 
+
+.logo {
+  width: 100px;
+  height: auto;
+}
 .frontHeader {
   display: flex;
   flex-direction: column;
