@@ -7,16 +7,13 @@ const Questions = () => {
     const faqData = [
         {
             question: '¿Cómo puedo comprar el sitio web?',
-            answer: 'Actualmente, ofrecemos un proceso de compra en línea directamente desde nuestro sitio web. Simplemente...',
-        }, {
-            question: '¿Puedo personalizar el diseño del sitio web?',
-            answer: 'Actualmente, ofrecemos un proceso de compra en línea directamente desde nuestro sitio web. Simplemente navega hasta la página de productos, selecciona el paquete que mejor se adapte a tus necesidades y sigue las instrucciones para completar la transacción.',
+            answer: 'Puedes adquirir nuestros diseños fácilmente completando el formulario de compra. Solo tienes que indicar la opción de diseño que te interesa y proporcionar la información requerida.',
         }, {
             question: '¿Puedo personalizar el diseño del sitio web?',
             answer: '¡Sí! Ofrecemos opciones de personalización para adaptar el diseño a tus preferencias. Durante el proceso de compra, tendrás la oportunidad de especificar tus requisitos de diseño o puedes comunicarte con nuestro equipo después de la compra para discutir las personalizaciones.',
         }, {
             question: '¿Qué incluye el paquete estándar de diseño del sitio web?',
-            answer: 'Nuestro paquete estándar incluye el diseño y desarrollo del sitio web, integración de características esenciales, optimización para dispositivos móviles y pruebas de calidad. Para detalles específicos, revisa la descripción detallada en la página del producto.',
+            answer: 'Nuestro paquete estándar incluye el diseño y desarrollo del sitio web, integración de características esenciales, optimización para dispositivos móviles y pruebas de calidad.',
         }, {
             question: '¿Cuánto tiempo lleva completar el proceso de diseño y desarrollo del sitio?',
             answer: 'El tiempo de entrega puede variar según la complejidad del proyecto y la cantidad de personalizaciones requeridas. Sin embargo, generalmente proporcionamos una estimación de tiempo durante el proceso de compra. Además, nuestro equipo se comunicará contigo para brindarte actualizaciones a lo largo del proceso.',
