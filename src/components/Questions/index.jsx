@@ -33,7 +33,7 @@ const Questions = () => {
 
 
     return (
-        <div className='faq'>
+        <div id='faq' className='faq'>
             <img src={imageFaq} alt='icono de faq' />
             <h1>Sección de Preguntas Frecuentes</h1>
 

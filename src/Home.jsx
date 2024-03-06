@@ -10,6 +10,7 @@ import Benefit from './components/Benefits';
 import Contact from './components/Contact';
 import FixImage from './components/FixImage';
 import WebSection from './components/WebSection';
+import AboutUsSection from './components/AboutUsSection';
 
 
 // import { Controller, Scene } from 'react-scrollmagic';
@@ -44,6 +45,7 @@ function Home() {
       <NavBarPages />
       <header className="App-header">
       </header>
+      <AboutUsSection />
       <Benefit />
       <FixImage />
       <WebSection />

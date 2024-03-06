@@ -5,7 +5,7 @@ import contactImage from "../../assets/footer.png"
 
 const Contact = () => {
   return (
-    <div className="contact-section" style={{ backgroundImage: `url(${contactImage})` }}>
+    <div id="contact" className="contact-section" style={{ backgroundImage: `url(${contactImage})` }}>
       <div className="contact-container">
         <div className="contact-info">
           <div className="info-text">

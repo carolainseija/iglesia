@@ -19,7 +19,7 @@ export default function Benefit() {
     return (
         <>
 
-            <section>
+            <section id="benefits">
                 <h2 className="titleBenefit">¿Por qué es necesario tener una página web para tu iglesia?</h2>
                 <p>
                     Tener una presencia online es esencial en la era digital actual. Aquí te mostramos algunos beneficios:

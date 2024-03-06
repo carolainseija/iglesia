@@ -18,7 +18,7 @@ const WebSection = () => {
   ];
 
   return (
-    <div className="web-section">
+    <div id='proyectos' className="web-section">
     <div className="section-header">
       <h1>Opciones Disponibles de Diseño</h1>
       <p>Explora nuestras increíbles opciones de diseño para encontrar inspiración.</p>
