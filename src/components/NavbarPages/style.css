@@ -49,13 +49,15 @@
     flex-direction: column;
     position: absolute;
     top: 100px;
-    background-color: white;
+    background-color: #42516d;
     width: 80%;
     height: auto;
     min-height: 150px;
     margin: 0px auto;
     justify-content: center;
     z-index: 1000;
+    border: 1px solid white;
+    padding: 10px;
   }
   .menu-sm.show-sm {
     display: flex;
@@ -63,8 +65,17 @@
   .hamburger-menu-sm {
     display: flex;
   }
+  .menu-sm a {
+    margin: 10px 15px;
+  }
 }
 
 .iconoNav {
   margin-right: 7px;
+}
+
+.contact {
+  padding: 10px 30px;
+  background-color: #e1a533;
+  border-radius: 10px;
 }
