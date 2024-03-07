@@ -3,10 +3,10 @@
 }
 
 .App-header {
-  background-color: #1c2a45;
+  background-color: #4CB5F5;
   padding: 20px;
   color: white;
-  background-image: url("./assets/banner.png");
+  background-image: url("./assets/banner004.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 70vh;
@@ -205,4 +205,89 @@ button:hover {
 
   
 
+}
+
+.pastor-section-container {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  padding: 100px 20px;
+  height: auto;
+}
+
+.pastor-section-container h2 {
+  color: #4CB5F5;
+}
+.pastor-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.pastor-description p {
+  line-height: 1.5;
+}
+
+.pastor-card {
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pastor-photo {
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  min-height: 200px;
+  background-image: url("https://mundodefenicaragua.org/wp-content/uploads/2019/12/pastores.jpg");
+  background-size: contain;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pastor-info {
+  padding: 15px;
+}
+
+.pastor-description {
+  width: 50%;
+  padding: 30px 50px;
+}
+
+
+
+
+.church-info-section-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #e1e1e14f;
+  margin: 50px 0px;
+  width: 100%;
+}
+
+.church-info-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-card {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  text-align: center;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
 }

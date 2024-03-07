@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './style.css'
-import logo from "../../assets/logo-white.png"
+import logo from "../../assets/iglesia.png"
 import web from "../../assets/web-yellow.png"
 import faq from "../../assets/faq-yellow.png"
 import about from "../../assets/about-yellow.png"
@@ -36,9 +36,9 @@ export function NavBarPages() {
                 <a href="#proyectos">
                 <img src={design} className='iconoNav' alt='icono' />
 Diseños</a>
-                 <a href="/#faq">
+                 {/* <a href="/#faq">
                     <img src={faq} className='iconoNav' alt='icono' />
-                    Preguntas frecuentes</a> 
+                    Preguntas frecuentes</a>  */}
                 <a className='contact' href="/#contact">Contacto</a>
             </div>
             <div className="hamburger-menu-sm" onClick={toggleMenu}>

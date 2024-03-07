@@ -9,18 +9,26 @@ export default function Benefit() {
 
 
     const benefits = [
-        { icon: alcance, title: 'Alcance más amplio', content: 'Un sitio web permite que la iglesia alcance a un público más amplio. Las personas interesadas en encontrar una comunidad religiosa pueden descubrir la iglesia en línea, lo que puede resultar en un crecimiento de la congregación.' },
-        { icon: comunicacion, title: 'Comunicación efectiva', content: 'Un sitio web sirve como una plataforma centralizada para compartir información clave, como horarios de servicios, eventos especiales, actividades comunitarias y noticias relevantes. ' },
-        { icon: acceso, title: 'Accesibilidad las 24 horas del día, los 7 días de la semana', content: 'Un sitio web permite que la iglesia esté disponible en línea en todo momento. Los miembros de la comunidad pueden acceder a información relevante, eventos, mensajes y recursos en cualquier momento.' },
-        { icon: multimedia, title: 'Contenido Accesible y Centralizado', content: 'Los usuarios pueden acceder a toda la variedad de contenido multimedia desde un solo lugar, eliminando la necesidad de navegar por diferentes secciones del sitio.' },
+        { icon: alcance, title: 'Ministerio de Alabanza', content: 'Experimenta la adoración a través de nuestra vibrante música y alabanza que busca conectar a las personas con la presencia de Dios.' },
+        { icon: comunicacion, title: 'Estudios Bíblicos', content: 'Participa en estudios bíblicos profundos que fortalecen tu comprensión de las Escrituras y te ayudan a crecer espiritualmente.' },
+        { icon: acceso, title: 'Comunidad Activa', content: 'Únete a nuestra comunidad activa y participa en eventos, actividades y grupos que fomentan la conexión y las relaciones significativas.' },
+        { icon: multimedia, title: 'Servicio Comunitario', content: 'Contribuye a hacer una diferencia en nuestra comunidad y más allá a través de oportunidades de servicio y proyectos comunitarios.' },
+      
     ]
 
-
+    const servicios = [
+        { icon: alcance, title: 'Ministerio de Alabanza', content: 'Experimenta la adoración a través de nuestra vibrante música y alabanza que busca conectar a las personas con la presencia de Dios.' },
+        { icon: comunicacion, title: 'Estudios Bíblicos', content: 'Participa en estudios bíblicos profundos que fortalecen tu comprensión de las Escrituras y te ayudan a crecer espiritualmente.' },
+        { icon: acceso, title: 'Comunidad Activa', content: 'Únete a nuestra comunidad activa y participa en eventos, actividades y grupos que fomentan la conexión y las relaciones significativas.' },
+        { icon: multimedia, title: 'Servicio Comunitario', content: 'Contribuye a hacer una diferencia en nuestra comunidad y más allá a través de oportunidades de servicio y proyectos comunitarios.' },
+      
+    ];
+      
     return (
         <>
 
             <section id="benefits">
-                <h2 className="titleBenefit">¿Por qué es necesario tener una página web para tu iglesia?</h2>
+                <h2 className="titleBenefit">¿Cuales son nuestros servicios?</h2>
                 <p>
                     Tener una presencia online es esencial en la era digital actual. Aquí te mostramos algunos beneficios:
                 </p>
