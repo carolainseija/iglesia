@@ -25,7 +25,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact-form">
+        <form
+          className="contact-form" 
+          action="https://formsubmit.co/el/cudatoo"
+          method="post"
+          enctype="multipart/form-data" // Asegúrate de agregar este atributo si tienes campos de archivo
+        >
+          <input type="hidden" name="_captcha" value="false" />
           <div className="form-group">
             <label htmlFor="name">Nombre:</label>
             <input type="text" id="name" name="name" required />
@@ -44,9 +50,9 @@ const Contact = () => {
           <button type="submit">Enviar Mensaje</button>
         </form>
       </div>
-    
+
       <div className="footer-bottom">
-      <div className="footer-social">
+        <div className="footer-social">
           <h3>Redes Sociales</h3>
           <ul>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
@@ -54,10 +60,9 @@ const Contact = () => {
             <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           </ul>
         </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 Nombre de tu Empresa. Todos los derechos reservados.</p>
-      </div>
-      {/* jhvhj */}
+        <div className="footer-bottom">
+          <p>&copy; 2024 Nombre de tu Empresa. Todos los derechos reservados.</p>
+        </div>
       </div>
     </div>
   );
