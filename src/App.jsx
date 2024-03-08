@@ -13,7 +13,7 @@ function App() {
         <Route path="/galeria" element={<Gallery />} />
         <Route path="/proyecto" element={<Proyecto />} />
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} /> Manejar rutas no coincidentes
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
